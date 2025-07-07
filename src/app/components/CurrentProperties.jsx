@@ -63,8 +63,7 @@ export default function CurrentProperties() {
                       {property.totalArea}
                     </div>
                   </div>
-
-                  <div className="flex items-start gap-2 text-sm text-gray-600">
+                  <div className="flex items-start gap-2 text-sm text-gray-700">
                     <MapPinIcon className="w-5 h-5 text-orange-500 " />
                     {property.address}
                   </div>
