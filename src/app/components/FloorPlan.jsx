@@ -84,7 +84,7 @@ export default function FloorPlan({ floorPlan }) {
           </div>
 
           {/* Image */}
-          <div className="w-full">
+          <div className="w-full shadow">
             <Image
               src={floorPlan}
               alt="Floor Plan"

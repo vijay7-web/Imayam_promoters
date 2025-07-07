@@ -23,7 +23,7 @@ export default function CurrentProperties() {
       </div>
 
       <div className="w-[85vw] mx-auto px-2 sm:px-6 lg:px-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-10">
           {propertyList.map((property, i) => (
             <Link key={i} href={`/properties/${property.slug}`}>
                 <div className="flex flex-col h-full cursor-pointer bg-white shadow-md hover:shadow-lg border-b-4 border-transparent hover:border-orange-500 transition-all duration-300">

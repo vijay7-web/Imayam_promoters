@@ -31,7 +31,7 @@ export default function Navbar() {
         <ul className="hidden md:flex gap-6 items-center">
           {links.map(link => (
             <li key={link.name}>
-              <a href={link.href} className="text-gray-600 font-semibold  hover:text-orange-500 transition">
+              <a href={link.href} className="text-gray-600 font-medium hover:text-orange-500 transition">
                 {link.name}
               </a>
             </li>
@@ -52,7 +52,7 @@ export default function Navbar() {
               <li key={link.name}>
                 <a
                   href={link.href}
-                  className="block text-gray-800 font-medium hover:text-blue-600 transition"
+                  className="block text-gray-800 hover:text-blue-600 transition"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.name}
