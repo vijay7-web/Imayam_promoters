@@ -3,10 +3,10 @@
 export default function HeaderTop() {
   return (
     <header id="header-top" className="bg-[#2e2e2e] py-[5px]">
-      <ul>
+      <ul className="m-0 p-0">
         <li>
           <div>
-            <ul className="flex gap-5 list-none p-0 ml-2">
+            <ul className="flex flex-col sm:flex-row sm:gap-5 gap-2 list-none p-0 ml-2 sm:items-center">
               <li>
                 <a
                   href="tel:+919942381376"
@@ -15,7 +15,7 @@ export default function HeaderTop() {
                   +91 99423 81376
                 </a>
               </li>
-              <span className="text-gray-100  mx-2">|</span>
+              <span className="text-gray-100 sm:mx-2 hidden sm:inline">|</span>
               <li>
                 <a
                   href="tel:+918880888495"
@@ -24,7 +24,7 @@ export default function HeaderTop() {
                   +91 88808 88495
                 </a>
               </li>
-                            <span className="text-gray-100  mx-2">|</span>
+              <span className="text-gray-100 sm:mx-2 hidden sm:inline">|</span>
               <li>
                 <a
                   href="mailto:admin@imayampromoters.com"

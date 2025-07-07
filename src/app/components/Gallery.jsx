@@ -7,8 +7,8 @@ import { motion } from 'framer-motion'
 const projects = {
   'Jeppiaar City': ["/jeppiaar-city/IMG20250703133703.jpg", "/jeppiaar-city/IMG20250703145022.jpg", "/jeppiaar-city/IMG20250703133652.jpg",  "/jeppiaar-city/IMG20250703133101.jpg", "/jeppiaar-city/IMG20250703133105.jpg"],
   'Praveen City': ["/praveen-city/1.jpg"],
-  'Anugraha Avenue': ["/anugraha-nagar/1.jpg", "/anugraha-nagar/2.jpg", "/anugraha-nagar/3.jpg", "/anugraha-nagar/4.jpg", "/anugraha-nagar/5.jpg"],
-  'Subiksha Garden': ['/img2.jpg', '/img4.jpg'],
+  'Anugraha Avenue': ["/anugraha-nagar/anugrahaarchimage.jpeg", "/anugraha-nagar/1.jpg", "/anugraha-nagar/2.jpg", "/anugraha-nagar/3.jpg", "/anugraha-nagar/4.jpg", "/anugraha-nagar/5.jpg"],
+  'Subiksha Garden': ["/tamizh-nagar/property-single-img1.jpg", "/tamizh-nagar/property-single-img2.jpg","/tamizh-nagar/property-single-img3.jpg"],
 }
 
 const Gallery = () => {
@@ -45,7 +45,7 @@ const Gallery = () => {
           {projects[selectedProject].map((src, index) => (
             <motion.div
               key={index}
-              className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="flex rounded-lg overflow-hidden items-center shadow-lg hover:shadow-xl transition-shadow duration-300"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}

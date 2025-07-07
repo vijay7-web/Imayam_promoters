@@ -28,11 +28,11 @@ const PropertyDetails = ({ property }) => {
                           alt={'cover-image'}
                           width={600}
                           height={400}
-                          className="w-full h-auto"
+                          className="w-full h-auto opacity-1/12"
                         />
                         <div className="absolute top-1/2 left-1/2 w-[90%] -translate-x-1/2 -translate-y-1/2 text-white text-center z-20 p-10 rounded-xl">
                           <h1 className="text-3xl font-semibold tracking-[2.4px] leading-[1.4] text-white uppercase tracking-wider mb-5">
-                            Home <span className="mx-4">|</span> Property Details
+                            Property Details
                           </h1>
                         </div>
                       </div>

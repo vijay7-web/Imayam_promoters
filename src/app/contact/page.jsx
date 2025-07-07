@@ -143,7 +143,7 @@ const Contact = () => {
             loading="lazy"
             allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7783.392808013573!2d80.165325!3d12.733218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5256be2794a8f7%3A0x2ca55fd735978b5e!2sImayam%20Group!5e0!3m2!1sen!2sin!4v1751875242114!5m2!1sen!2sin"          ></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.0088968121017!2d79.3984159!3d10.962700100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a55330f95d3f735%3A0x3923a9fec6571a30!2sImayamPromoters!5e0!3m2!1sen!2sin!4v1751890098319!5m2!1sen!2sin"></iframe>
         </div>
     </div>
     </>

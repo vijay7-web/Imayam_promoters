@@ -64,15 +64,15 @@ export const propertyList = [
       "Tar Road", "Drainage"
     ],
     floorPlan: "/praveen-city/floorplan.jpg",
-    mapEmbedUrl: "https://www.google.com/maps/embed?pb=..."
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.6640209217167!2d79.37240321043973!3d10.9887125891281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baad30066547817%3A0x944ef514a51c42c1!2sIMAYAM%20PRAVEEN%20CITY!5e0!3m2!1sen!2sin!4v1751890027202!5m2!1sen!2sin"
   },
   {
     slug: "Anugraha-Avenue",
     name: "Anugraha Avenue ",
     address: "Bypass Road, Gandarvakkottai",
     location: "Bypass Road, Gandarvakkottai, Pudukkottai - 613303",
-    archImage: "/anugraha-nagar/1.jpg",
-    images: ["/anugraha-nagar/1.jpg", "/anugraha-nagar/2.jpg", "/anugraha-nagar/3.jpg", "/anugraha-nagar/4.jpg", "/anugraha-nagar/5.jpg"],
+    archImage: "/anugraha-nagar/anugrahaarchimage.jpeg",
+    images: ["/anugraha-nagar/anugrahaarchimage.jpeg","/anugraha-nagar/1.jpg", "/anugraha-nagar/2.jpg", "/anugraha-nagar/3.jpg", "/anugraha-nagar/4.jpg", "/anugraha-nagar/5.jpg"],
     video: "https://www.youtube.com/watch?v=KBYSpR8N6pc&list=RDKBYSpR8N6pc&start_radio=1",
     totalPlots: 168,
     soldPlots: 90,
@@ -96,7 +96,7 @@ export const propertyList = [
       "Power Lines", "Park", "Shopping Area"
     ],
     floorPlan: "/anugraha-nagar/floorplan.jpg",
-    mapEmbedUrl: "https://www.google.com/maps/embed?pb=..."
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.2120681417287!2d79.04020846043447!3d10.640626739456197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baabd004cfd4f29%3A0x857767914df4118!2sAnugraha%20Avenue!5e0!3m2!1sen!2sin!4v1751889921933!5m2!1sen!2sin"
   },
   {
     slug: "Subiksha-Garden",
