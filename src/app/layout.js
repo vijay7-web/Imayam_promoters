@@ -1,13 +1,13 @@
 import './globals.css'
 import HeaderTop from './components/HeaderTop'
 import Navbar from './components/Navbar'
-import ContactSection from './components/ContactSection'
+import Footer from './components/Footer'
 
 export const metadata = {
   title: 'Imayam Promoters',
   description: 'A modern civil engineer portfolio built with Next.js',
   icons: {
-    icon: '/Imayam-Logo-web4.jpg',
+    icon: '/imayam-map-logo.jpg',
   },
 }
 
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <HeaderTop />
         <Navbar />
         {children}
-        <ContactSection />
+        <Footer />
       </body>
     </html>
   )

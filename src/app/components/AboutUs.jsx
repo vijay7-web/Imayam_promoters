@@ -42,9 +42,9 @@ const AboutUs = () => {
   const [showMore, setShowMore] = useState(false)
 
   return (
-    <section id="aboutus" className="bg-white py-16 px-4 md:px-20">
+    <section id="aboutus" className="bg-white py-20 px-4 md:px-20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-thin text-orange-500 uppercase tracking-tight mb-2">
+        <h2 className="text-4xl font-thin text-orange-500 text-center uppercase tracking-tight mb-2">
           ABOUT US
         </h2>
         <p className="text-center text-gray-600 mb-10">
@@ -64,7 +64,7 @@ const AboutUs = () => {
                 className="text-orange-600 font-semibold cursor-pointer hover:underline ml-1"
                 onClick={() => setShowMore(!showMore)}
               >
-                {showMore ? '' : 'Read More →'}
+                {showMore ? '' : 'read more →'}
               </span>
             </p>
 
@@ -82,7 +82,7 @@ const AboutUs = () => {
                 className="text-orange-600 font-semibold cursor-pointer hover:underline ml-1"
                 onClick={() => setShowMore(!showMore)}
               >
-                {showMore ? 'Show Less ←' : ''}
+                {showMore ? 'show less ←' : ''}
               </span>
               </p>
             </div>

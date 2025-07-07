@@ -48,10 +48,10 @@ export default function Testimonials() {
               className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300"
             >
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-16 h-16 relative rounded-full overflow-hidden">
+                <div className="w-12 h-12 relative rounded-full overflow-hidden">
                   <Image
-                    src={testimonial.image}
-                    alt={testimonial.name}
+                    src={'/testi-thumb2.jpg'}
+                    alt={'icon'}
                     layout="fill"
                     objectFit="cover"
                   />

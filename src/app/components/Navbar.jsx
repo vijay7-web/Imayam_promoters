@@ -12,16 +12,15 @@ export default function Navbar() {
 
   const links = [
     { name: 'HOME', href: '/' },
-    { name: 'PROPERTIES', href: '/properties' },
+    { name: 'PROPERTIES', href: '/properties-all' },
     { name: 'GALLERY', href: '#gallery' },
     { name: 'ABOUT US', href: '#aboutus' },
-    { name: 'SERVICES', href: '#services' },
     { name: 'CONTACT US', href: '/contact' },
   ];
 
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div className="px-4 py-3 flex items-center justify-between">
         <div className="flex items-center">
           <Link href="/">
             <Image src="/Imayam-Logo-web4.jpg" alt="Logo" width={180} height={70} />
@@ -32,7 +31,7 @@ export default function Navbar() {
         <ul className="hidden md:flex gap-6 items-center">
           {links.map(link => (
             <li key={link.name}>
-              <a href={link.href} className="text-gray-800 font-medium hover:text-orange-500 transition">
+              <a href={link.href} className="text-gray-600 font-semibold  hover:text-orange-500 transition">
                 {link.name}
               </a>
             </li>
