@@ -31,9 +31,12 @@ export default function Navbar() {
         <ul className="hidden md:flex gap-6 items-center">
           {links.map(link => (
             <li key={link.name}>
-              <a href={link.href} className="text-gray-600 font-medium hover:text-orange-500 transition">
+              <Link
+                href={link.href}
+                className="block text-gray-800 hover:text-blue-600 transition"
+              >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -50,13 +53,13 @@ export default function Navbar() {
           <ul className="flex flex-col gap-4">
             {links.map(link => (
               <li key={link.name}>
-                <a
+                <Link
                   href={link.href}
                   className="block text-gray-800 hover:text-blue-600 transition"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
