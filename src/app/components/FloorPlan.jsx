@@ -24,10 +24,7 @@ export default function FloorPlan({ floorPlan }) {
 
   useEffect(() => {
     function handleClickOutside(event) {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target)
-      ) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setOpenDropdown(false);
       }
     }
@@ -43,60 +40,11 @@ export default function FloorPlan({ floorPlan }) {
       <div className="mt-10">
         <h3 className="text-xl font-semibold text-orange-500 mb-4">Floor Plan</h3>
 
-        <div className="flex flex-col md:flex-row gap-4 relative">
-          {/* Download button for mobile - top */}
-          <div className="md:hidden">
-            <div className="flex justify-start">
-              <div className="relative">
-                <button
-                  onClick={() => setOpenDropdown(!openDropdown)}
-                  className="flex items-center font-semibold gap-2 bg-white text-green-700 hover:bg-green-700 hover:text-white px-4 py-2 rounded shadow transition"
-                >
-                  <ArrowDownTrayIcon className="h-5 w-5" />
-                  Download
-                  <ChevronDownIcon className="h-4 w-4" />
-                </button>
-
-                {openDropdown && (
-                  <div
-                    ref={dropdownRef}
-                    className="absolute z-10 mt-2 w-48 bg-white shadow-lg rounded border overflow-hidden"
-                  >
-                    <button
-                      onClick={() => {
-                        handleDownloadImage();
-                        setOpenDropdown(false);
-                      }}
-                      className="w-full text-left px-4 py-2 hover:bg-green-700 hover:text-white"
-                    >
-                      Download as Image
-                    </button>
-                    <button
-                      onClick={() => {
-                        handleDownloadPDF();
-                        setOpenDropdown(false);
-                      }}
-                      className="w-full text-left px-4 py-2 hover:bg-green-700 hover:text-white"
-                    >
-                      Download as PDF
-                    </button>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-
-          {/* Image */}
-          <Image
-            src={floorPlan}
-            alt="Floor Plan"
-            width={1000}
-            height={600}
-            className="object-cover rounded w-full"
-          />
-
-          {/* Download button for desktop - side */}
-          <div className="hidden sm:block">
+        {/* Responsive wrapper */}
+        <div className="flex flex-col sm:flex-row gap-4 items-start">
+          
+          {/* Download Button (above image on mobile, beside on desktop) */}
+          <div className="sm:order-2">
             <div className="relative">
               <button
                 onClick={() => setOpenDropdown(!openDropdown)}
@@ -110,7 +58,7 @@ export default function FloorPlan({ floorPlan }) {
               {openDropdown && (
                 <div
                   ref={dropdownRef}
-                  className="absolute z-10 mt-2 w-48 bg-white shadow-lg rounded border overflow-hidden"
+                  className="absolute z-20 mt-2 w-48 bg-white shadow-lg rounded border overflow-hidden"
                 >
                   <button
                     onClick={() => {
@@ -133,6 +81,17 @@ export default function FloorPlan({ floorPlan }) {
                 </div>
               )}
             </div>
+          </div>
+
+          {/* Image */}
+          <div className="w-full">
+            <Image
+              src={floorPlan}
+              alt="Floor Plan"
+              width={1000}
+              height={600}
+              className="object-cover rounded w-full"
+            />
           </div>
         </div>
       </div>
