@@ -21,15 +21,11 @@ export default function CurrentProperties() {
             <h1 className="text-3xl font-semibold tracking-[2.4px] leading-[1.4] text-white uppercase tracking-wider mb-5">
               Properties
             </h1>
+            <p className="text-white font-medium text-base">Find our current properties near your city</p>
           </div>
         </div>
       </section>
       <div className='py-10 px-4 md:px-10 bg-blue-50'>
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-indigo-900 uppercase mb-2">All Properties</h2>
-          <p className="text-gray-600 font-medium text-base">Find our current properties near your city</p>
-        </div>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {propertyList.map((property, index) => (
             <Link key={index} href={`/property-details/${property.slug}`}>

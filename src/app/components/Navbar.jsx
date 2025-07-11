@@ -13,7 +13,7 @@ export default function Navbar() {
   const links = [
     { name: 'HOME', href: '/' },
     { name: 'PROPERTIES', href: '/properties-all' },
-    { name: 'GALLERY', href: '/#gallery' },
+    { name: 'GALLERY', href: '/gallery' },
     { name: 'ABOUT US', href: '/#aboutus' },
     { name: 'CONTACT US', href: '/contact' },
   ];
