@@ -1,0 +1,600 @@
+// data/allProperties.js
+
+export const propertyList = [
+  {
+    slug: "jeppiaar-city",
+    name: "Jeppiaar city",
+    address: "Thandalai, Thiruvarur",
+    location: "Thandalai, Thiruvarur - 610004",
+    archImage: "/jeppiaar-city/IMG20250703145032.jpg",
+    images: ["/jeppiaar-city/IMG20250703133703.jpg", "/jeppiaar-city/IMG20250703145022.jpg", "/jeppiaar-city/IMG20250703133652.jpg",  "/jeppiaar-city/IMG20250703133101.jpg", "/jeppiaar-city/IMG20250703133105.jpg"],
+    video: "https://www.youtube.com/watch?v=KBYSpR8N6pc&list=RDKBYSpR8N6pc&start_radio=1",
+    totalPlots: 310,
+    soldPlots: 17,
+    availablePlots: 293,
+    totalArea: "400498 Sq. Ft.",
+    surveyNo: "124/1,2B, 3A, 3B 125/1, 2A, 2A, 2B. 126/1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 127/13, 129/1,2 116/1,4,5,10,11A,12,13,14,15, 16,17,18,19,20,21, 22,23,24,25,26,27,28, 117/1,2,3,4,5,6, 127/1, 130/1 & 2",
+    taluk: "Thiruvarur",
+    district: "Thiruvarur",
+    pincode: "610004",
+    panchayat: "Thandalai",
+    roadType: "30 Ft. Tar Road",
+    fencing: "Fully Compounded",
+    landmark: "Opposite to GRK School",
+    busStop: "Thandalai stop",
+    plotSizes: {
+      "30 X 50": "20 Plots",
+      "30 X 40": "25 Plots",
+      "15 X 35": "19 Plots"
+    },
+    facilities: [
+      "Main Road", "Residential Area", "Fencing", "Tar Road",
+      "Ground Water", "Power Supply", "Near by Schools", "Near by Colleges"
+    ],
+    floorPlan: "/jeppiaar-city/jpr city layout final.JPG",
+    mapEmbedUrl: "https://www.google.com/maps?q=284/5,+Chettymandapan+Bypass,+Opp+to+KR+Gas+Station,+Kumbakonam+612001&output=embed"
+  },
+  {
+    slug: "Praveen-City",
+    name: "Praveen City",
+    address: "Asur, Kumbakonam",
+    location: "Asur, kumbakonam Taluk, Thanjavur - 612501",
+    archImage: "/praveen-city/1.jpg",
+    images: ["/praveen-city/1.jpg", "/praveen-city/8.jpeg", "/praveen-city/2.jpg", "/praveen-city/3.jpg", "/praveen-city/4.jpg", "/praveen-city/5.jpg", "/praveen-city/6.jpg", "/praveen-city/7.jpg"],
+    video: "https://www.youtube.com/watch?v=KBYSpR8N6pc&list=RDKBYSpR8N6pc&start_radio=1",
+    totalPlots: 165,
+    soldPlots: 130,
+    availablePlots: 35,
+    totalArea: "246246.5 Sq. Ft.",
+    surveyNo: "16/3A2, 107/1A, 1B, 108/1, 2A, 2B, 3, 125/2A,2B",
+    taluk: "Kumbakonam",
+    district: "Thanjavur",
+    pincode: "612501",
+    panchayat: "Asur",
+    roadType: "25 Ft. Concrete Road",
+    fencing: "Partial Fencing",
+    landmark: "Near Rockfort Temple",
+    busStop: "Asur Bus Stop",
+    plotSizes: {
+      "30 X 40": "25 Plots",
+      "20 X 30": "25 Plots"
+    },
+    facilities: [
+      "24/7 Water", "Electricity", "Park", "Nearby Schools",
+      "Tar Road", "Drainage"
+    ],
+    floorPlan: "/praveen-city/floorplan.jpg",
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.6640209217167!2d79.37240321043973!3d10.9887125891281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baad30066547817%3A0x944ef514a51c42c1!2sIMAYAM%20PRAVEEN%20CITY!5e0!3m2!1sen!2sin!4v1751890027202!5m2!1sen!2sin"
+  },
+  {
+    slug: "Anugraha-Avenue",
+    name: "Anugraha Avenue ",
+    address: "Bypass Road, Gandarvakkottai",
+    location: "Bypass Road, Gandarvakkottai, Pudukkottai - 613303",
+    archImage: "/anugraha-nagar/anugrahaarchimage.jpeg",
+    images: ["/anugraha-nagar/anugrahaarchimage.jpeg","/anugraha-nagar/1.jpg", "/anugraha-nagar/2.jpg", "/anugraha-nagar/3.jpg", "/anugraha-nagar/4.jpg", "/anugraha-nagar/5.jpg"],
+    video: "https://www.youtube.com/watch?v=KBYSpR8N6pc&list=RDKBYSpR8N6pc&start_radio=1",
+    totalPlots: 416,
+    soldPlots: 221,
+    availablePlots: 195,
+    totalArea: "483607 Sq. Ft.",
+    surveyNo: "54/9, 254/4, 254/2B, 256/2A, 256/3A",
+    taluk: "Gandharvakkottai",
+    district: "Pudukkottai",
+    pincode: "613303",
+    panchayat: "Ariyanipatti",
+    roadType: "40 Ft. Black Top Road",
+    fencing: "Half Compounded",
+    landmark: "Behind District Court",
+    busStop: "Collector Office Bus Stop",
+    plotSizes: {
+      "40 X 40": "35 Plots",
+      "30 X 30": "35 Plots"
+    },
+    facilities: [
+      "Main Road Access", "Security Room", "Borewell Water", 
+      "Power Lines", "Park", "Shopping Area"
+    ],
+    floorPlan: "/anugraha-nagar/floorplan.jpg",
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.2120681417287!2d79.04020846043447!3d10.640626739456197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baabd004cfd4f29%3A0x857767914df4118!2sAnugraha%20Avenue!5e0!3m2!1sen!2sin!4v1751889921933!5m2!1sen!2sin"
+  },
+  {
+    slug: "Subiksha-Garden",
+    name: "Subiksha Garden",
+    address: "Thanjavur",
+    location: "Kumbakonam Main Road, Thanjavur - 613007",
+    archImage: "/tamizh-nagar/property-single-img1.jpg",
+    images: ["/tamizh-nagar/property-single-img1.jpg", "/tamizh-nagar/property-single-img2.jpg","/tamizh-nagar/property-single-img3.jpg"],
+    video: "https://www.youtube.com/watch?v=KBYSpR8N6pc&list=RDKBYSpR8N6pc&start_radio=1",
+    totalPlots: 57,
+    soldPlots: 37,
+    availablePlots: 20,
+    totalArea: "71135 Sq. Ft.",
+    surveyNo: "118/1E2, 118/1E1D1B, 118/1D2B1, 120/1A, 120/1B, 120/5A, 120/6, 120/7A",
+    taluk: "Thanjavur",
+    district: "Thanjavur",
+    pincode: "613007",
+    panchayat: "Medical College Panchayat",
+    roadType: "30 Ft. Tar Road",
+    fencing: "Fully Fenced",
+    landmark: "Kumbakonam main Road",
+    busStop: "Medical College Stop",
+    plotSizes: {
+      "40 X 60": "20 Plots",
+      "30 X 50": "30 Plots",
+      "20 X 40": "30 Plots"
+    },
+    facilities: [
+      "Gated Community", "CCTV", "Water Line", "Tar Road", 
+      "Street Lights", "Park", "Near Hospital"
+    ],
+    floorPlan: "/subiksha-garden/subiksha-floorplan.jpeg",
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=..."
+  },
+  {
+    slug: "nn-nagar-pandaaravadai",
+    name: "N.N Nagar - Pandaaravadai",
+    address: "51/1, Paapanasam, Pandaravadai, Thanjavur.",
+    location: "Pandaaravadai, Paapanasam Taluk, Thanjavur - 613204",
+    archImage: "/nn-nagar/property-single-img5.jpg",
+    images: ["/nn-nagar/property-single-img1.jpg", "/nn-nagar/property-single-img2.jpg", "/nn-nagar/property-single-img3.jpg", "/nn-nagar/property-single-img4.jpg", "/nn-nagar/property-single-img5.jpg"],
+    video: "https://www.youtube.com/watch?v=KBYSpR8N6pc&list=RDKBYSpR8N6pc&start_radio=1",
+    totalPlots: 51,
+    soldPlots: 26,
+    availablePlots: 25,
+    totalArea: "67000 Sq. Ft.",
+    surveyNo: "To be updated",
+    taluk: "Paapanasam",
+    district: "Thanjavur",
+    pincode: "613204",
+    panchayat: "Pandaaravadai",
+    roadType: "25 Ft. Tar Road",
+    fencing: "Fully Fenced",
+    landmark: "Near Pandaaravadai Railway Station",
+    busStop: "Pandaaravadai Bus Stop",
+    plotSizes: {
+      "30 X 40": "15 Plots",
+      "20 X 30": "20 Plots",
+      "25 X 35": "16 Plots"
+    },
+    facilities: [
+      "Tar Road", "Street Lights", "Borewell Water",
+      "Drainage Facility", "Park", "Nearby Schools"
+    ],
+    floorPlan: "/nn-nagar/floorplan.jpg",
+    mapEmbedUrl: "https://www.google.com/maps?q=Pandaaravadai,+Thanjavur&output=embed"
+  },
+  {
+    slug: "pv-nagar-kumbakonam",
+    name: "P.V Nagar - Kumbakonam",
+    address: "113/2A2, Swamimalai, Kumbakonam",
+    location: "Swamimalai, Kumbakonam, Thanjavur - 612302",
+    archImage: "/pv-nagar/property-single-img3.jpg",
+    images: ["/pv-nagar/property-single-img3.jpg", "/pv-nagar/property-single-img2.jpg", "/pv-nagar/property-single-img4.jpg", "/pv-nagar/property-single-img5.jpg"],
+    video: "To be updated",
+    totalPlots: 51,
+    soldPlots: 26,
+    availablePlots: 25,
+    totalArea: "176346 Sq. Ft.",
+    surveyNo: "To be updated",
+    taluk: "Kumbakonam",
+    district: "Thanjavur",
+    pincode: "612302",
+    panchayat: "Swamimalai",
+    roadType: "25 Ft. Tar Road",
+    fencing: "Fully Fenced",
+    landmark: "Near Swamimalai Temple",
+    busStop: "Swamimalai Bus Stop",
+    plotSizes: {
+      "30 X 40": "15 Plots",
+      "20 X 30": "20 Plots",
+      "25 X 35": "16 Plots"
+    },
+    facilities: [
+      "Tar Road", "Street Lights", "Borewell Water",
+      "Drainage Facility", "Park", "Nearby Schools"
+    ],
+    floorPlan: "/pv-nagar/floorplan.jpg",
+    mapEmbedUrl: "https://www.google.com/maps?q=Swamimalai,+Kumbakonam&output=embed"
+  },
+  {
+    slug: "surya-garden-swamimalai",
+    name: "Surya Garden - Swamimalai",
+    address: "51/1, Papanasam, Pandaravadai, Thanjavur.",
+    location: "Swamimalai, Kumbakonam, Thanjavur - 612302",
+    archImage: "/suryagarden/property-single-img2.jpg",
+    images: ["/suryagarden/property-single-img2.jpg", "/suryagarden/property-single-img3.jpg"],
+    video: "To be updated",
+    totalPlots: 51,
+    soldPlots: 26,
+    availablePlots: 25,
+    totalArea: "31881 Sq. Ft.",
+    surveyNo: "To be updated",
+    taluk: "Kumbakonam",
+    district: "Thanjavur",
+    pincode: "612302",
+    panchayat: "Swamimalai",
+    roadType: "25 Ft. Tar Road",
+    fencing: "Fully Fenced",
+    landmark: "Near Swamimalai Bus Stop",
+    busStop: "Swamimalai Bus Stop",
+    plotSizes: {
+      "30 X 40": "15 Plots",
+      "20 X 30": "20 Plots",
+      "25 X 35": "16 Plots"
+    },
+    facilities: [
+      "Tar Road", "Street Lights", "Borewell Water",
+      "Drainage Facility", "Park", "Nearby Schools"
+    ],
+    floorPlan: "/suryagarden/floorplan.jpg",
+    mapEmbedUrl: "https://www.google.com/maps?q=Swamimalai,+Kumbakonam&output=embed"
+  },
+  {
+    slug: "tamizh-nagar-cholanmaligai",
+    name: "Tamizh Nagar - Cholanmaligai",
+    address: "142/2,3,4,5 Patteeswaram, Kumbakonam",
+    location: "Cholanmaligai, Patteeswaram, Kumbakonam - 612703",
+    archImage: "/tamizh-nagar/property-single-img4.jpg",
+    images: ["/tamizh-nagar/property-single-img4.jpg", "/tamizh-nagar/property-single-img1.jpg", "/tamizh-nagar/property-single-img2.jpg", "/tamizh-nagar/property-single-img3.jpg", "/tamizh-nagar/property-single-img5.jpg"],
+    video: "To be updated",
+    totalPlots: 51,
+    soldPlots: 26,
+    availablePlots: 25,
+    totalArea: "104527.4 Sq. Ft.",
+    surveyNo: "To be updated",
+    taluk: "Kumbakonam",
+    district: "Thanjavur",
+    pincode: "612703",
+    panchayat: "Patteeswaram",
+    roadType: "25 Ft. Tar Road",
+    fencing: "Fully Fenced",
+    landmark: "Near Patteeswaram Temple",
+    busStop: "Cholanmaligai Bus Stop",
+    plotSizes: {
+      "30 X 40": "15 Plots",
+      "20 X 30": "20 Plots",
+      "25 X 35": "16 Plots"
+    },
+    facilities: [
+      "Tar Road", "Street Lights", "Borewell Water",
+      "Drainage Facility", "Park", "Nearby Schools"
+    ],
+    floorPlan: "/tamizh-nagar/floorplan.jpg",
+    mapEmbedUrl: "https://www.google.com/maps?q=Cholanmaligai,+Kumbakonam&output=embed"
+  },
+  {
+    slug: "rp-nagar-ranganathapuram",
+    name: "R P Nagar - Ranganathapuram",
+    address: "53/3B,53/2,59/2, Ranganathapuram, Kumbakonam.",
+    location: "Ranganathapuram, Kumbakonam - 612302",
+    archImage: "/rp-nagar/property-single-img2.jpg",
+    images: ["/rp-nagar/property-single-img2.jpg", "/rp-nagar/property-single-img3.jpg","/rp-nagar/property-single-img1.jpg"],
+    video: "To be updated",
+    totalPlots: 51,
+    soldPlots: 26,
+    availablePlots: 25,
+    totalArea: "72000 Sq. Ft.",
+    surveyNo: "To be updated",
+    taluk: "Kumbakonam",
+    district: "Thanjavur",
+    pincode: "612302",
+    panchayat: "Ranganathapuram",
+    roadType: "25 Ft. Tar Road",
+    fencing: "Fully Fenced",
+    landmark: "Near Ranganathapuram Bus Stop",
+    busStop: "Ranganathapuram Bus Stop",
+    plotSizes: {
+      "30 X 40": "15 Plots",
+      "20 X 30": "20 Plots",
+      "25 X 35": "16 Plots"
+    },
+    facilities: [
+      "Tar Road", "Street Lights", "Borewell Water",
+      "Drainage Facility", "Park", "Nearby Schools"
+    ],
+    floorPlan: "/rp-nagar/floorplan.jpg",
+    mapEmbedUrl: "https://www.google.com/maps?q=Ranganathapuram,+Kumbakonam&output=embed"
+  },
+  {
+    slug: "pvr-nagar-thirukarugavur",
+    name: "PVR Nagar Thirukarugavur",
+    address: "458/2A1A, Saliyamangalam, Thirukarugavur",
+    location: "Thirukarugavur, Saliyamangalam, Thanjavur - 613405",
+    archImage: "/pvr-nagar/property-single-img5.jpg",
+    images: ["/pvr-nagar/property-single-img5.jpg"],
+    video: "To be updated",
+    totalPlots: 51,
+    soldPlots: 26,
+    availablePlots: 25,
+    totalArea: "67000 Sq. Ft.",
+    surveyNo: "To be updated",
+    taluk: "Thirukarugavur",
+    district: "Thanjavur",
+    pincode: "613405",
+    panchayat: "Saliyamangalam",
+    roadType: "25 Ft. Tar Road",
+    fencing: "Fully Fenced",
+    landmark: "Near Thirukarugavur Temple",
+    busStop: "Thirukarugavur Bus Stop",
+    plotSizes: {
+      "30 X 40": "15 Plots",
+      "20 X 30": "20 Plots",
+      "25 X 35": "16 Plots"
+    },
+    facilities: [
+      "Tar Road", "Street Lights", "Borewell Water",
+      "Drainage Facility", "Park", "Nearby Schools"
+    ],
+    floorPlan: "/pvr-nagar/floorplan.jpg",
+    mapEmbedUrl: "https://www.google.com/maps?q=Thirukarugavur,+Thanjavur&output=embed"
+  },
+  {
+  slug: "andavar-nagar",
+  name: "Andavar Nagar - Kadichampadi",
+  address: "Kadichampadi, Kumbakonam",
+  location: "Kadichampadi, Kumbakonam Taluk, Thanjavur – 613205",
+  archImage: "/andavar-nagar/1.jpg",
+  images: [
+    "/andavar-nagar/1.jpg",
+    "/andavar-nagar/2.jpg",
+    "/andavar-nagar/3.jpg",
+    "/andavar-nagar/4.jpg"
+  ],
+  video: "https://www.youtube.com/watch?v=dummy_video_id",
+  totalPlots: 60,
+  soldPlots: 40,
+  availablePlots: 20,
+  totalArea: "80000 Sq. Ft.",
+  surveyNo: "53/3, 54/2, 3, 4A2",
+  taluk: "Kumbakonam",
+  district: "Thanjavur",
+  pincode: "612501",
+  panchayat: "Kadichampadi",
+  roadType: "30 Ft. Tar Road",
+  fencing: "Fully Fenced",
+  landmark: "Opposite Railway Crossing",
+  busStop: "Kadichampadi Main Stop",
+  plotSizes: {
+    "30 X 50": "20 Plots",
+    "25 X 40": "25 Plots",
+    "20 X 30": "15 Plots"
+  },
+  facilities: [
+    "Street Lights", "Drainage", "Play Area", "Water Connection"
+  ],
+  floorPlan: "/andavar-nagar/floorplan.jpeg",
+  mapEmbedUrl: "https://www.google.com/maps?q=Andavar+Nagar,+Thanjavur&output=embed"
+},
+{
+  slug: "chakra-avenue",
+  name: "Chakra Avenue - Thiruvarur",
+  address: "Ramapuram, Mannargudi, Thiruvarur",
+  location: "Ramapuram, Mannargudi Taluk, Thiruvarur – 614014",
+  archImage: "/chakra-avenue/1.jpg",
+  images: [
+    "/chakra-avenue/1.jpg",
+    "/chakra-avenue/2.jpg",
+    "/chakra-avenue/3.jpg",
+    "/chakra-avenue/4.jpg",
+    "/chakra-avenue/5.jpg"
+  ],
+  video: "https://www.youtube.com/watch?v=dummy_video_id2",
+  totalPlots: 48,
+  soldPlots: 30,
+  availablePlots: 18,
+  totalArea: "62000 Sq. Ft.",
+  surveyNo: "153/1, 160",
+  taluk: "Mannargudi",
+  district: "Thiruvarur",
+  pincode: "614014",
+  panchayat: "Ramapuram",
+  roadType: "25 Ft. Concrete Road",
+  fencing: "Partial Fencing",
+  landmark: "Near Govt. High School",
+  busStop: "Pillaiyarpatti Bus Stand",
+  plotSizes: {
+    "30 X 40": "18 Plots",
+    "20 X 30": "30 Plots"
+  },
+  facilities: [
+    "Gated Entry", "Security", "Street Lights", "Drainage"
+  ],
+  floorPlan: "/chakra-avenue/floorplan.jpg",
+  mapEmbedUrl: "https://www.google.com/maps?q=Chakra+Avenue,+Thanjavur&output=embed"
+},
+{
+  slug: "mahashree-nagar",
+  name: "Mahashree Nagar",
+  address: "Needamangalam Main road, Kumbakonam",
+  location: "Needamangalam Main road, Kumbakonam, Thanjavur – 612001",
+  archImage: "/mahashree-nagar/1.jpg",
+  images: [
+    "/mahashree-nagar/1.jpg",
+    "/mahashree-nagar/2.jpg",
+    "/mahashree-nagar/3.jpg",
+    "/mahashree-nagar/4.jpg",
+    "/mahashree-nagar/5.jpg"
+  ],
+  video: "https://www.youtube.com/watch?v=dummy_video_id3",
+  totalPlots: 80,
+  soldPlots: 45,
+  availablePlots: 35,
+  totalArea: "90000 Sq. Ft.",
+  surveyNo: "118/2",
+  taluk: "Kumbakonam",
+  district: "Thanjavur",
+  pincode: "612001",
+  panchayat: "Melacauvery",
+  roadType: "30 Ft. Cement Road",
+  fencing: "Fully Fenced",
+  landmark: "Near Cauvery Bridge",
+  busStop: "Needamangalam Main road",
+  plotSizes: {
+    "40 X 60": "10 Plots",
+    "30 X 40": "40 Plots",
+    "20 X 30": "30 Plots"
+  },
+  facilities: [
+    "Electricity", "Park", "Street Lights", "Borewell Water"
+  ],
+  floorPlan: "/mahashree-nagar/floorplan.jpg",
+  mapEmbedUrl: "https://www.google.com/maps?q=Mahashree+Nagar,+Thanjavur&output=embed"
+},
+{
+  slug: "ramu-avenue",
+  name: "Ramu Avenue",
+  address: "Perumandi, Kumbakonam",
+  location: "Perumandi, Asoor, Kumbakonam Taluk, Thanjavur – 612002",
+  archImage: "/ramu-avenue/1.jpg",
+  images: ["/ramu-avenue/1.jpg", "/ramu-avenue/2.jpg", "/ramu-avenue/3.jpg", "/ramu-avenue/4.jpg", "/ramu-avenue/5.jpg"],
+  video: "https://www.youtube.com/watch?v=dummy_video_id4",
+  totalPlots: 100,
+  soldPlots: 85,
+  availablePlots: 15,
+  totalArea: "105000 Sq. Ft.",
+  surveyNo: "69/1A",
+  taluk: "Kumbakonam",
+  district: "Thanjavur",
+  pincode: "612002",
+  panchayat: "Asoor",
+  roadType: "20 Ft. Tar Road",
+  fencing: "Partially Fenced",
+  landmark: "Behind Meenakshi School",
+  busStop: "Asoor Stop",
+  plotSizes: {
+    "30 X 40": "50 Plots",
+    "20 X 30": "50 Plots"
+  },
+  facilities: [
+    "Park", "Water Tank", "Street Lights", "Security Cabin"
+  ],
+  floorPlan: "/ramu-avenue/floorplan.jpg",
+  mapEmbedUrl: "https://www.google.com/maps?q=Ramu+Avenue,+Thanjavur&output=embed"
+},
+{
+  slug: "roja-garden",
+  name: "Roja Garden",
+  address: "Kadichampadi, Kumbakonam",
+  location: "Kadichampadi, Kumbakonam Taluk, Thanjavur – 612501",
+  archImage: "/roja-garden/1.jpg",
+  images: ["/roja-garden/1.jpg", "/roja-garden/2.jpg", "/roja-garden/3.jpg", "/roja-garden/4.jpg", "/roja-garden/5.jpg"],
+  video: "https://www.youtube.com/watch?v=dummy_video_id5",
+  totalPlots: 90,
+  soldPlots: 60,
+  availablePlots: 30,
+  totalArea: "98000 Sq. Ft.",
+  surveyNo: "113/3, 114/2B2, 115/1A, 1B, 2, 4, 5  A,5B, 6",
+  taluk: "Kumbakonam",
+  district: "Thanjavur",
+  pincode: "612501",
+  panchayat: "Kadichampadi",
+  roadType: "25 Ft. Gravel Road",
+  fencing: "Fenced with Gate",
+  landmark: "Near Airavatesvara Temple",
+  busStop: "Kadichampadi Bus Stop",
+  plotSizes: {
+    "30 X 50": "30 Plots",
+    "20 X 30": "60 Plots"
+  },
+  facilities: [
+    "Temple Nearby", "Park", "Street Lights", "Water Tank"
+  ],
+  floorPlan: "/roja-garden/floorplan.jpeg",
+  mapEmbedUrl: "https://www.google.com/maps?q=Roja+Garden,+Thanjavur&output=embed"
+},
+{
+  slug: "sri-chakra-township",
+  name: "Sri Chakra Township - Thiruvarur",
+  address: "Alivalam, Thiruvarur",
+  location: "Alivalam, Thiruvarur – 610106",
+  archImage: "/sri-chakra-township/4.jpg",
+  images: ["/sri-chakra-township/4.jpg", "/sri-chakra-township/1.jpg", "/sri-chakra-township/2.jpg", "/sri-chakra-township/3.jpg", "/sri-chakra-township/5.jpg"],
+  video: "https://www.youtube.com/watch?v=dummy_video_id6",
+  totalPlots: 120,
+  soldPlots: 75,
+  availablePlots: 45,
+  totalArea: "150000 Sq. Ft.",
+  surveyNo: "198/1, 199/1B, 199/2, 200/2B, 200/4B, 201/4, 201/5, 201/7, 201/8, 203/3",
+  taluk: "Thiruvarur",
+  district: "Thiruvarur",
+  pincode: "610106",
+  panchayat: "Alivalam",
+  roadType: "30 Ft. Cement Road",
+  fencing: "Fully Gated Compound",
+  landmark: "Kovilpathu, Alivalam",
+  busStop: "New Bus Stand",
+  plotSizes: {
+    "40 X 60": "20 Plots",
+    "30 X 40": "60 Plots",
+    "20 X 30": "40 Plots"
+  },
+  facilities: [
+    "Gated Community", "Street Lights", "Playground", "Security"
+  ],
+  floorPlan: "/sri-chakra-township/floorplan.jpg",
+  mapEmbedUrl: "https://www.google.com/maps?q=Sri+Chakra+Township,+Thanjavur&output=embed"
+},
+{
+  slug: "varatharajan-nagar",
+  name: "Varatharajan Nagar",
+  address: "Ashesham, Mannargudi",
+  location: "Ashesham, Mannargudi Taluk, Thiruvarur – 614001",
+  archImage: "/varatharajan-nagar/1.jpg",
+  images: ["/varatharajan-nagar/1.jpg", "/varatharajan-nagar/2.jpg", "/varatharajan-nagar/2.jpg"],
+  video: "https://www.youtube.com/watch?v=dummy_video_id7",
+  totalPlots: 72,
+  soldPlots: 50,
+  availablePlots: 22,
+  totalArea: "85000 Sq. Ft.",
+  surveyNo: "232/7A1, 234A/1, 237A/9",
+  taluk: "Mannargudi",
+  district: "Thiruvarur",
+  pincode: "614001",
+  panchayat: "Ashesham",
+  roadType: "25 Ft. Tar Road",
+  fencing: "Full Compound Wall",
+  landmark: "Near Govt. School",
+  busStop: "Ashesham Stop",
+  plotSizes: {
+    "30 X 40": "40 Plots",
+    "25 X 35": "32 Plots"
+  },
+  facilities: [
+    "Park", "Drainage", "Street Lights", "Overhead Tank"
+  ],
+  floorPlan: "/varatharajan-nagar/floorplan.jpg",
+  mapEmbedUrl: "https://www.google.com/maps?q=Varatharajan+Nagar,+Thanjavur&output=embed"
+},
+{
+  slug: "vishal-garden",
+  name: "Vishal Garden",
+  address: "Sundaraperumal Kovil, Kumbakonam",
+  location: "Sundaraperumal Kovil, Kumbakonam Taluk – 612005",
+  archImage: "/vishal-garden/1.jpg",
+  images: ["/vishal-garden/1.jpg"],
+  video: "https://www.youtube.com/watch?v=dummy_video_id8",
+  totalPlots: 110,
+  soldPlots: 70,
+  availablePlots: 40,
+  totalArea: "140000 Sq. Ft.",
+  surveyNo: "65/1B, 66/2A",
+  taluk: "Kumbakonam",
+  district: "Thanjavur",
+  pincode: "612005",
+  panchayat: "Sundaraperumal Kovil",
+  roadType: "30 Ft. Tar Road",
+  fencing: "Fully Gated",
+  landmark: "Near Railway Gate",
+  busStop: "Sundaraperumal Kovil Stop",
+  plotSizes: {
+    "30 X 50": "40 Plots",
+    "20 X 30": "70 Plots"
+  },
+  facilities: [
+    "Gated Compound", "Water Supply", "Electric Poles", "Park"
+  ],
+  floorPlan: "/vishal-garden/floorplan.jpeg",
+  mapEmbedUrl: "https://www.google.com/maps?q=Vishal+Garden,+Thanjavur&output=embed"
+}
+];

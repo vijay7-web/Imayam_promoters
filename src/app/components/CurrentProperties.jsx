@@ -56,7 +56,7 @@ export default function CurrentProperties() {
                     </div>
                     <div className="flex items-center gap-2">
                       <CheckBadgeIcon className="w-5 h-5 text-green-600" />
-                      {property.availablePlots} Available
+                      {property.totalPlots - property.soldPlots} Available
                     </div>
                     <div className="flex items-center gap-2">
                       <BuildingOffice2Icon className="w-5 h-5 text-orange-500" />

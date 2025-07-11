@@ -165,7 +165,7 @@ const PropertyDetails = ({ property }) => {
                         ['Total Property Area', totalArea],
                         ['Total Plots', totalPlots],
                         ['Plots Sold', soldPlots],
-                        ['Available Plots', availablePlots],
+                        ['Available Plots', totalPlots - soldPlots],
                         ['Road Type', roadType],
                         ['Fencing', fencing],
                         ['Landmark', landmark],
