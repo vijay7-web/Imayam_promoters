@@ -10,7 +10,8 @@ export async function generateStaticParams() {
 }
 
 // This will be called at build time
-export default function PropertyPage({ params }) {
-  const property = propertyList.find((p) => p.slug === params.slug);
+export default async function PropertyPage({ params }) {
+  const slug = params.slug;
+  const property = propertyList.find((p) => p.slug === slug);
   return <PropertyDetails property={property} />;
 }
