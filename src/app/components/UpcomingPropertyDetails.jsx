@@ -4,10 +4,10 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { XMarkIcon } from '@heroicons/react/24/solid';
-import { ArrowDownTrayIcon } from '@heroicons/react/24/outline';
+import { ArrowDownTrayIcon, MapPinIcon } from '@heroicons/react/24/outline';
 import FloorPlan from './FloorPlan';
 
-const PropertyDetails = ({ property }) => {
+const UpcomingPropertyDetails = ({ property }) => {
     const [selectedImage, setSelectedImage] = useState(null);
     const [selectedIndex, setSelectedIndex] = useState(null);
 
@@ -19,28 +19,6 @@ const PropertyDetails = ({ property }) => {
         surveyNo, taluk, district, pincode, panchayat, roadType, fencing,
         landmark, busStop, plotSizes, facilities, floorPlan, mapEmbedUrl,
     } = property;
-
-    function getYouTubeVideoId(url) {
-        try {
-            const urlObj = new URL(url);
-            if (urlObj.hostname === "youtu.be") {
-                return urlObj.pathname.slice(1); // remove the leading '/'
-            }
-            if (urlObj.hostname.includes("youtube.com")) {
-                return urlObj.searchParams.get("v");
-            }
-        } catch (e) {
-            return null;
-        }
-        return null;
-    }
-
-
-    const videoId = getYouTubeVideoId(video);
-    const thumbnail = videoId
-        ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
-        : null;
-
 
     return (
         <>
@@ -56,7 +34,7 @@ const PropertyDetails = ({ property }) => {
                     />
                     <div className="absolute top-1/2 left-1/2 w-[90%] -translate-x-1/2 -translate-y-1/2 text-white text-center z-20 p-10 rounded-xl">
                         <h1 className="text-3xl font-semibold tracking-[2.4px] leading-[1.4] text-white uppercase tracking-wider mb-5">
-                            Property Details
+                           Upcoming Property Details
                         </h1>
                     </div>
                 </div>
@@ -66,13 +44,16 @@ const PropertyDetails = ({ property }) => {
             <section className="py-8 bg-white">
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-2xl font-semibold text-orange-500 uppercase">{name}</h2>
-                    <p className="mt-2 text-gray-600 flex flex-wrap justify-center gap-8">
+                    {/* <p className="mt-2 text-gray-600 flex flex-wrap justify-center gap-8">
                         <span className="bg-gray-100 px-3 py-2 rounded font-bold text-gray-600"><i className="fa fa-th-large"></i> {totalPlots} Total Plots</span>
                         <span className="bg-gray-100 px-3 py-2 rounded font-bold text-gray-600"><i className="fa fa-th-large text-red-600"></i> {soldPlots} Plots Sold Out</span>
                         <span className="bg-gray-100 px-3 py-2 rounded font-bold text-gray-600"><i className="fa fa-th-large text-green-600"></i> {availablePlots} Plots Available</span>
                     </p>
-                    <h3 className="mt-2 text-lg font-semibold font-semibold text-green-800 px-2 py-1 rounded">{totalArea}</h3>
-                    <p className="mt-1 text-gray-700"><i className="fa fa-map-marker text-green-600"></i> {address}</p>
+                    <h3 className="mt-2 text-lg font-semibold font-semibold text-green-800 px-2 py-1 rounded">{totalArea}</h3> */}
+                                      <div className="flex justify-center items-center gap-2 py-2 text-gray-700 text-base font-medium">
+                  <MapPinIcon className="w-5 h-5 text-yellow-600" />
+                  <span>{property.address}</span>
+                </div>
                 </div>
             </section>
 
@@ -88,44 +69,34 @@ const PropertyDetails = ({ property }) => {
                             <Image src={img} alt={`property-${idx}`} fill className="object-cover" />
                         </div>
                     ))}
-                    <div className="relative w-full h-[250px] rounded overflow-hidden shadow cursor-pointer">
+                    <div className="shadow rounded overflow-hidden w-full h-[250px] relative cursor-pointer">
                         <a
-                            href={video}
+                            href={video} // replace with your link
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block w-full h-full"
+                            className="block shadow rounded overflow-hidden"
                         >
-                            {/* Thumbnail */}
-                            {thumbnail ? (
-                                <img
-                                    src={thumbnail}
+                            <div className="relative">
+                                <Image
+                                    src="/jeppiaar-city/IMG20250703133703.jpg" // Replace with your local/public YouTube thumbnail
                                     alt="Video Thumbnail"
-                                    className="w-full h-full object-cover"
+                                    width={600}
+                                    height={400}
+                                    className="w-full h-[250px] object-cover"
                                 />
-                            ) : (
-                                <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-                                    <span className="text-gray-600"></span>
+                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="h-16 w-16 text-white opacity-90"
+                                        fill="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path d="M8 5v14l11-7z" />
+                                    </svg>
                                 </div>
-                            )}
-
-                            {/* Dark overlay */}
-                            <div className="absolute inset-0 z-10 flex items-center justify-center bg-black/40">
-                                {/* Play icon */}
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    className="h-16 w-16 text-white"
-                                    fill="currentColor"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path d="M8 5v14l11-7z" />
-                                </svg>
                             </div>
                         </a>
                     </div>
-
-
-
-
                 </div>
                 {selectedIndex !== null && (
                     <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center px-2">
@@ -231,7 +202,7 @@ const PropertyDetails = ({ property }) => {
                     </div>
 
                     {/* Details Section */}
-                    <div className="mt-10">
+                    {/* <div className="mt-10">
                         <h3 className="text-xl font-semibold text-orange-500 mb-4">Details</h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
                             {[
@@ -258,31 +229,6 @@ const PropertyDetails = ({ property }) => {
                                 </div>
                             )}
                         </div>
-                    </div>
-                    {/* <div className="mt-10">
-                        <h3 className="text-xl font-semibold text-orange-500 mb-2">Facilities</h3>
-                        <table className="w-full text-left">
-                            <tbody>
-                            {facilities?.length > 0 &&
-                                facilities.reduce((rows, key, index) => {
-                                if (index % 4 === 0) rows.push([]);
-                                rows[rows.length - 1].push(key);
-                                return rows;
-                                }, []).map((row, rowIndex) => (
-                                <tr key={rowIndex}>
-                                    {row.map((facility, colIndex) => (
-                                    <td key={colIndex} className="py-2 px-4 font-bold text-gray-500">
-                                        {facility}
-                                    </td>
-                                    ))}
-                                    {row.length < 4 &&
-                                    Array.from({ length: 4 - row.length }).map((_, i) => (
-                                        <td key={`empty-${i}`} className="py-2 px-4"></td>
-                                    ))}
-                                </tr>
-                                ))}
-                            </tbody>
-                        </table>
                     </div> */}
                     <div className="mt-10">
                         <h3 className="text-xl font-semibold text-orange-500 mb-4">Facilities</h3>
@@ -295,7 +241,7 @@ const PropertyDetails = ({ property }) => {
                         </div>
                     </div>
 
-                    <FloorPlan floorPlan={floorPlan} />
+                    {/* <FloorPlan floorPlan={floorPlan} /> */}
                 </div>
             </section >
 
@@ -329,4 +275,4 @@ const PropertyDetails = ({ property }) => {
     );
 };
 
-export default PropertyDetails;
+export default UpcomingPropertyDetails;

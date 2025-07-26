@@ -6,6 +6,7 @@ import Gallery from "./components/Gallery";
 import Testimonials from "./components/Testimonials";
 import AboutUs from "./components/AboutUs";
 import WhyChooseUs from "./components/WhyChooseUs";
+import UpcomingProperties from "./components/UpcomingProperties";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
      <Container>
       <HeroCarousel />
       <CurrentProperties />
+      <UpcomingProperties />
       <Gallery />
       <AboutUs />
       <Testimonials />
