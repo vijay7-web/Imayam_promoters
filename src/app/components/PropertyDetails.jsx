@@ -280,6 +280,19 @@ const PropertyDetails = ({ property }) => {
                     ></iframe>
                 </div>
             </section >
+            <a
+                href="https://wa.me/919487427373"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="fixed bottom-4 right-4 md:bottom-10 md:right-10 z-50 bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors"
+            >
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                    alt="WhatsApp"
+                    className="w-6 h-6 md:w-8 md:h-8 object-contain"
+                />
+            </a>
+
         </>
     );
 };

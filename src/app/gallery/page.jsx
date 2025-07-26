@@ -9,34 +9,16 @@ import { Carousel } from 'react-responsive-carousel';
 
 const projects = {
     'Jeppiaar City': [
-        "/jeppiaar-city/IMG20250703133703.jpg",
-        "/jeppiaar-city/IMG20250703145022.jpg",
-        "/jeppiaar-city/IMG20250703133652.jpg",
-        "/jeppiaar-city/IMG20250703133101.jpg",
-        "/jeppiaar-city/IMG20250703133105.jpg"
+        "/jeppiaar-city/IMG20250703133703.jpg", "/images/jeppiaar-city/1.webp", "/images/jeppiaar-city/2.JPG", "/images/jeppiaar-city/3.JPG",  "/images/jeppiaar-city/4.jpg", "/images/jeppiaar-city/5.jpg", "/images/jeppiaar-city/6.jpg"
     ],
     'Praveen City': [
-        "/praveen-city/1.jpg",
-        "/praveen-city/8.jpeg",
-        "/praveen-city/2.jpg",
-        "/praveen-city/3.jpg",
-        "/praveen-city/4.jpg",
-        "/praveen-city/5.jpg",
-        "/praveen-city/6.jpg",
-        "/praveen-city/7.jpg"
+        "/images/praveen-city/1.jpg", "/images/praveen-city/2.jpg", "/images/praveen-city/3.jpg", "/images/praveen-city/4.jpg", "/images/praveen-city/5.jpg"
     ],
     'Anugraha Avenue': [
-        "/anugraha-nagar/anugrahaarchimage.jpeg",
-        "/anugraha-nagar/1.jpg",
-        "/anugraha-nagar/2.jpg",
-        "/anugraha-nagar/3.jpg",
-        "/anugraha-nagar/4.jpg",
-        "/anugraha-nagar/5.jpg"
+        "/images/anugraha-nagar/1.jpg", "/images/anugraha-nagar/2.jpg", "/images/anugraha-nagar/3.jpg", "/images/anugraha-nagar/4.jpg", "/images/anugraha-nagar/5.jpg"
     ],
     'Subiksha Garden': [
-        "/tamizh-nagar/property-single-img1.jpg",
-        "/tamizh-nagar/property-single-img2.jpg",
-        "/tamizh-nagar/property-single-img3.jpg"
+        "/tamizh-nagar/property-single-img1.jpg", "/tamizh-nagar/property-single-img2.jpg","/tamizh-nagar/property-single-img3.jpg"
     ],
 }
 
@@ -98,48 +80,61 @@ const GalleryPage = () => {
 
             {/* Carousel Modal */}
             {selectedIndex !== null && (
-                <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center px-4">
-                    <button
-                        className="absolute top-4 right-4 text-white hover:text-red-400"
-                        onClick={() => setSelectedIndex(null)}
-                    >
-                        <XMarkIcon className="w-8 h-8" />
-                    </button>
-
-                    {/* Previous Button */}
-                    <button
-                        className={`absolute left-4 text-white bg-gray-800 hover:bg-gray-700 p-2 rounded-full ${selectedIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''
-                            }`}
-                        onClick={() => selectedIndex > 0 && setSelectedIndex(selectedIndex - 1)}
-                        disabled={selectedIndex === 0}
-                    >
-                        ‹
-                    </button>
-
-                    {/* Image */}
-                    <div className="relative max-w-4xl w-full p-4">
-                        <Image
-                            src={allImages[selectedIndex]}
-                            alt="Preview"
-                            width={1200}
-                            height={800}
-                            className="w-full h-auto max-h-[90vh] object-contain rounded shadow-lg"
-                        />
-                    </div>
-
-                    {/* Next Button */}
-                    <button
-                        className={`absolute right-4 text-white bg-gray-800 hover:bg-gray-700 p-2 rounded-full ${selectedIndex === allImages.length - 1 ? 'opacity-50 cursor-not-allowed' : ''
-                            }`}
-                        onClick={() =>
-                            selectedIndex < allImages.length - 1 && setSelectedIndex(selectedIndex + 1)
-                        }
-                        disabled={selectedIndex === allImages.length - 1}
-                    >
-                        ›
-                    </button>
-                </div>
-            )}
+                                <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center px-2">
+                                    {/* Close button */}
+                                    <button
+                                        className="absolute top-3 right-3 text-white hover:text-red-500"
+                                        onClick={() => setSelectedIndex(null)}
+                                    >
+                                        <XMarkIcon className="w-8 h-8" />
+                                    </button>
+            
+                                    {/* Image container with centered image */}
+                                    <div className="relative flex flex-col items-center justify-center w-full max-w-full lg:max-w-[90vw] p-2 sm:p-4">
+                                        {/* Image preview */}
+                                        <div
+                                            className="w-full max-h-[90vh] overflow-auto touch-pan-y flex justify-center"
+                                            style={{
+                                                WebkitOverflowScrolling: "touch",
+                                                touchAction: "pinch-zoom",
+                                            }}
+                                        >
+                                            <Image
+                                                src={allImages[selectedIndex]}
+                                                alt={`Preview ${selectedIndex + 1}`}
+                                                width={1920}
+                                                height={1080}
+                                                className="max-h-[90vh] h-auto w-auto object-contain rounded-lg shadow-xl border border-gray-700"
+                                                priority
+                                            />
+                                        </div>
+            
+                                        <div className="text-white mt-3 text-xs sm:text-sm">
+                                            Image {selectedIndex + 1} of {allImages.length}
+                                        </div>
+            
+                                        {/* Prev and Next buttons */}
+                                        <button
+                                            className={`absolute left-2 lg:-left-10 top-1/2 transform -translate-y-1/2 text-white text-4xl sm:text-5xl transition-opacity duration-300 ${selectedIndex === 0 ? "opacity-30 cursor-not-allowed" : "hover:text-gray-400"
+                                                }`}
+                                            onClick={() => selectedIndex > 0 && setSelectedIndex(selectedIndex - 1)}
+                                            disabled={selectedIndex === 0}
+                                        >
+                                            ‹
+                                        </button>
+            
+                                        <button
+                                            className={`absolute right-2 lg:-right-10 top-1/2 transform -translate-y-1/2 text-white text-4xl sm:text-5xl transition-opacity duration-300 ${selectedIndex === allImages.length - 1 ? "opacity-30 cursor-not-allowed" : "hover:text-gray-400"
+                                                }`}
+                                            onClick={() => selectedIndex < allImages.length - 1 && setSelectedIndex(selectedIndex + 1)}
+                                            disabled={selectedIndex === allImages.length - 1}
+                                        >
+                                            ›
+                                        </button>
+                                    </div>
+            
+                                </div>
+                            )}
         </>
     )
 }
