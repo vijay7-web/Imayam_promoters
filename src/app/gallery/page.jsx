@@ -9,7 +9,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 const projects = {
     'Jeppiaar City': [
-        "/jeppiaar-city/IMG20250703133703.jpg", "/images/jeppiaar-city/1.webp", "/images/jeppiaar-city/2.JPG", "/images/jeppiaar-city/3.JPG",  "/images/jeppiaar-city/4.jpg", "/images/jeppiaar-city/5.jpg", "/images/jeppiaar-city/6.jpg"
+        "/jeppiaar-city/IMG20250703145032.jpg", "/jeppiaar-city/IMG20250703133703.jpg", "/images/jeppiaar-city/1.webp", "/images/jeppiaar-city/2.JPG", "/images/jeppiaar-city/3.JPG",  "/images/jeppiaar-city/4.jpg", "/images/jeppiaar-city/5.jpg", "/images/jeppiaar-city/6.jpg"
     ],
     'Praveen City': [
         "/images/praveen-city/1.jpg", "/images/praveen-city/2.jpg", "/images/praveen-city/3.jpg", "/images/praveen-city/4.jpg", "/images/praveen-city/5.jpg"
