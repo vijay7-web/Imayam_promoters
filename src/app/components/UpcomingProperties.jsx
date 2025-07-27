@@ -9,10 +9,10 @@ export default function UpcomingProperties() {
   return (
    <section id="upcoming-properties" className="py-20 px-4 bg-yellow-50">
   <div className="text-center mb-12">
-    <h2 className="text-2xl sm:text-3xl md:text-4xl font-thin text-yellow-600 uppercase tracking-tight mb-4">
+        <h2 className="text-4xl font-thin text-orange-500 uppercase tracking-tight mb-2">
       Upcoming Properties
     </h2>
-    <p className="text-gray-500 text-sm sm:text-base md:text-lg max-w-xl mx-auto font-medium">
+        <p className="text-gray-500 text-base md:text-lg max-w-xl mx-auto font-medium">
       Exciting projects launching soon near you
     </p>
   </div>
