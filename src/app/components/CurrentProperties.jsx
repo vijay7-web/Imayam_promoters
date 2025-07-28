@@ -22,8 +22,8 @@ export default function CurrentProperties() {
         </p>
       </div>
 
-      <div className="w-[85vw] mx-auto px-2 sm:px-6 lg:px-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-10">
+      <div className="w-[90vw] mx-auto px-2 sm:px-6 lg:px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-6">
           {propertyList.map((property, i) => (
             <Link key={i} href={`/properties/${property.slug}`}>
                 <div className="flex flex-col h-full cursor-pointer bg-white shadow-md hover:shadow-lg border-b-4 border-transparent hover:border-orange-500 transition-all duration-300">
@@ -39,7 +39,7 @@ export default function CurrentProperties() {
                   </div> */}
                 </div>
 
-                <div className="p-6 space-y-4">
+                <div className="py-6 px-3 space-y-4">
                   <h3 className="text-lg font-semibold text-orange-500 uppercase tracking-wide">
                     {property.name}
                   </h3>
