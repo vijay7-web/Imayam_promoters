@@ -20,6 +20,27 @@ const UpcomingPropertyDetails = ({ property }) => {
         landmark, busStop, plotSizes, facilities, floorPlan, mapEmbedUrl,
     } = property;
 
+    function getYouTubeVideoId(url) {
+        try {
+            const urlObj = new URL(url);
+            if (urlObj.hostname === "youtu.be") {
+                return urlObj.pathname.slice(1); // remove the leading '/'
+            }
+            if (urlObj.hostname.includes("youtube.com")) {
+                return urlObj.searchParams.get("v");
+            }
+        } catch (e) {
+            return null;
+        }
+        return null;
+    }
+
+
+    const videoId = getYouTubeVideoId(video);
+    const thumbnail = videoId
+        ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
+        : null;
+
     return (
         <>
             {/* Breadcrumb Section */}
@@ -60,44 +81,54 @@ const UpcomingPropertyDetails = ({ property }) => {
             {/* Gallery Section */}
             <section className="py-8 bg-gray-50">
                 <div className="container mx-auto px-4 md:px-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                    {images.map((img, idx) => (
-                        <div
-                            key={idx}
-                            className="shadow rounded overflow-hidden w-full h-[250px] relative cursor-pointer"
-                            onClick={() => setSelectedIndex(idx)}
-                        >
-                            <Image src={img} alt={`property-${idx}`} fill className="object-cover" />
-                        </div>
-                    ))}
-                    <div className="shadow rounded overflow-hidden w-full h-[250px] relative cursor-pointer">
-                        <a
-                            href={video} // replace with your link
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block shadow rounded overflow-hidden"
-                        >
-                            <div className="relative">
-                                <Image
-                                    src="/jeppiaar-city/IMG20250703133703.jpg" // Replace with your local/public YouTube thumbnail
-                                    alt="Video Thumbnail"
-                                    width={600}
-                                    height={400}
-                                    className="w-full h-[250px] object-cover"
-                                />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="h-16 w-16 text-white opacity-90"
-                                        fill="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path d="M8 5v14l11-7z" />
-                                    </svg>
+                                    {images.map((img, idx) => (
+                                        <div
+                                            key={idx}
+                                            className="shadow rounded overflow-hidden w-full h-[250px] relative cursor-pointer"
+                                            onClick={() => setSelectedIndex(idx)}
+                                        >
+                                            <Image src={img} alt={`property-${idx}`} fill className="object-cover" />
+                                        </div>
+                                    ))}
+                                    <div className="relative w-full h-[250px] rounded overflow-hidden shadow cursor-pointer">
+                                        <a
+                                            href={video}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="block w-full h-full"
+                                        >
+                                            {/* Thumbnail */}
+                                            {thumbnail ? (
+                                                <img
+                                                    src={thumbnail}
+                                                    alt="Video Thumbnail"
+                                                    className="w-full h-full object-cover"
+                                                />
+                                            ) : (
+                                                <div className="w-full h-full bg-gray-300 flex items-center justify-center">
+                                                    <span className="text-gray-600"></span>
+                                                </div>
+                                            )}
+                
+                                            {/* Dark overlay */}
+                                            <div className="absolute inset-0 z-10 flex items-center justify-center bg-black/40">
+                                                {/* Play icon */}
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    className="h-16 w-16 text-white"
+                                                    fill="currentColor"
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path d="M8 5v14l11-7z" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                
+                
+                
+                
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
                 {selectedIndex !== null && (
                     <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center px-2">
                         {/* Close button */}
