@@ -6,8 +6,8 @@ import { motion } from 'framer-motion'
 
 const projects = {
   'Jeppiaar City': [ "/jeppiaar-city/IMG20250703145022.jpg", "/jeppiaar-city/IMG20250703133101.jpg", "/jeppiaar-city/IMG20250703133105.jpg"],
-  'Praveen City': ["/praveen-city/1.jpg", "/praveen-city/2.jpg", "/praveen-city/3.jpg", "/praveen-city/4.jpg", "/praveen-city/5.jpg", "/praveen-city/6.jpg", "/praveen-city/7.jpg"],
-  'Anugraha Avenue': ["/anugraha-nagar/anugrahaarchimage.jpeg", "/anugraha-nagar/1.jpg", "/anugraha-nagar/2.jpg", "/anugraha-nagar/3.jpg", "/anugraha-nagar/4.jpg", "/anugraha-nagar/5.jpg"],
+  'Praveen City': ["/praveen-city/1.jpg", "/praveen-city/2.jpg", "/praveen-city/3.jpg", "/praveen-city/4.jpg"],
+  'Anugraha Avenue': ["/anugraha-nagar/anugrahaarchimage.jpeg", "/anugraha-nagar/2.jpg", "/anugraha-nagar/3.jpg", "/anugraha-nagar/4.jpg", "/anugraha-nagar/5.jpg"],
   'Subiksha Garden': ["/tamizh-nagar/property-single-img1.jpg", "/tamizh-nagar/property-single-img2.jpg","/tamizh-nagar/property-single-img3.jpg"],
 }
 
